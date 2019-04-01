@@ -2,17 +2,37 @@
 
 **A client library for the IPFS Cluster HTTP API, implemented in Java.**
 
-UNOFFICIAL AND ALPHA
+ALPHA
 
 ````
 This is a port of ipfs/java-ipfs-api adapted for the API exposed by ipfs/ipfs-cluster.
 ````
+> A Java client for the IPFS Cluster http api
 
-## install
+## Table of Contents
 
-add this code to your project or make it to jar
+- [Install](#install)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [License](#license)
 
-
+## Install
+```
+  <repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.github.dtubenetwork</groupId>
+      <artifactId>java-ipfs-http-client</artifactId>
+      <version>v0.0.1</version>
+    </dependency>
+  </dependencies>
+```
 
 ## Dependencies
 
@@ -22,7 +42,7 @@ This module requires ipfs-cluster to be running. It is assumed that the IPFS Clu
 
 ## Usage
 
-### To import the module:
+### Create an IPFS Cluster instance with:
 
 ````java
 IPFSCluster ipfsCluster = new IPFSCluster("127.0.0.1", 9094);
@@ -51,7 +71,17 @@ ipfsCluster.allocation.ls();
 ipfsCluster.allocation(String CID);
 ipfsCluster.health.graph();
 ````
-
-
-
 The code is mostly from java-ipfs-api modified to consume the ipfs-cluster API.
+
+## Contribute
+
+Feel free to join in. All welcome. Open an [issue](https://github.com/dtubenetwork/java-ipfs-cluster-api/issues)!
+
+This repository falls under the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
+
+[![](https://cdn.rawgit.com/jbenet/contribute-ipfs-gif/master/img/contribute.gif)](https://github.com/ipfs/community/blob/master/contributing.md)
+
+
+## License
+
+[MIT](LICENSE)
